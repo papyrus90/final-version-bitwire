@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<table width="700px" height="50px">
+ <tr>
+  <td>Title</td>
+  <td>Date</td>
+  <td>Time</td>
+  <td>Where</td>
+  <td>Visibility</td>
+  <td>Actions</td>
+ </tr>
+ <tr th:each="schedule : ${schedule}">
+     <td th:text="${{schedule.title}}"></td>
+     <td th:text="${{schedule.postingDate}}"></td>
+     <td th:text="${{schedule.postingTime}}"></td>
+     <td th:text="${{schedule.media}}"></td>
+     <td th:text="${{schedule.visibility}}"></td>
+     <td>
+      <a th:href="@{/schedule/schedule_edit?id={id}(id=${{schedule.id}})}">Edit Post</a>
+      <a th:href="@{/schedule/schedule_delete?id={id}(id=${{schedule.id}})}">Delete post</a>
+     </td>
+ 
+ </tr>
+</table>
+<br/>
+<a href="/schedule/schedule_edit">Schedule a new post</a>
+
+</html>

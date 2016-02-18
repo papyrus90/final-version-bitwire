@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+<title>You are in</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+	 <p th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</p>
+	
+	<a href = "/schedule">Schedule</a>
+	<form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+     </form>
+     
+     
+     
+     
+     
+     
+      <a href = "/admin/dashboard"> manage your admin account</a>
+      
+</body>
+</html>
