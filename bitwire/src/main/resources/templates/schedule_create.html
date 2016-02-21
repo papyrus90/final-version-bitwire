@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Created by Sandor Naghi -->
+<html>
+<body>
+<form action="/schedule" method="post">
+<h3>Schedule your post:</h3>
+<br />
+<table>
+	<tr>
+		<td>
+			<b>Title:</b>
+		</td>
+		<td>
+		<div class="form-group">
+						<label for="title"></label> <input type="text"
+							class="form-control" id="title" name="title"  
+							placeHolder="Title" />
+					</div><!--th:value="${schedule.title}" -->
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Date of post:</b>
+		</td>
+		<td>
+		<div class="form-group">
+						<label for="postingDate"></label> <input type="date"
+							class="form-control" id="postingDate" name="postingDate"  
+							placeHolder="Posting Date" />
+					</div><!-- th:value="${schedule.postingDate}" -->
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Time of post:</b>
+		</td>
+		<td>
+			<div class="form-group">
+						<label for="postingTime"></label> <input type="time"
+							class="form-control" id="postingTime" name="postingTime"  
+							placeHolder="Posting Time" />
+					</div><!-- th:value="${schedule.postingTime}" -->
+		</td>
+	</tr>
+</table>
+	<br />
+	<b>Content:</b>
+	<br />
+	<!-- <textarea name="content" cols="50" rows="10" th:value="${schedule.content}" ></textarea> -->
+	<div class="form-group">
+					<label for="content"></label><label>
+						 <input type="textarea"	cols="50" rows="10"
+						 	class="form-control" id="content" name="content"  
+							placeHolder="Content" />
+						</label>
+					</div><!-- th:value="${schedule.content}" -->
+	<br />
+	<br />
+	<b>Where:</b>
+	<table width="300px" height="100px">
+		<tr> 
+ 	 		<td>
+			<div class="form-group">
+				<label for="media"></label><label>
+ 	 				<input type="checkbox" name="media" id="media" value="facebook" checked="checked"/>Facebook<br/>
+  					<input type="checkbox" name="media" id="media" value="twitter"  />Twitter<br/>
+  					<input type="checkbox" name="media" id="media" value="linkedin"/>Linkedin<br/>
+  				</label>
+  			</div><!-- th:value="${schedule.media}" -->
+			</td> 
+			<td>
+					<div class="form-group">
+						<label for="visibility"></label><label>
+							<input type="radio" name="visibility" id="visibility" value="public" checked="checked"/>Public<br/>
+							<input type="radio" name="visibility" id="visibility" value="friends" />Friends<br/>
+						</label>
+					</div><!-- th:value="${schedule.visibility}" -->
+			</td>
+			<td>
+				
+			</td>
+		</tr>
+	</table>
+	<br />
+	<input type="hidden" class="form-control" id="userId" value="0" />		
+			
+	<input type="submit" value="Add to queue" />
+</form>
+</body>
+</html>
