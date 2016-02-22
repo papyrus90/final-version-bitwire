@@ -7,6 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
+/**
+ * This class is used to send emails.
+ * 
+ * @author Popa Alex
+ *
+ */
 
 @Component
 public class EmailSender {

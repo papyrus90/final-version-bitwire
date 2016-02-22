@@ -8,6 +8,13 @@ import org.springframework.validation.Validator;
 import ro.sci.domain.ForgotPasswordForm;
 import ro.sci.service.SqlService;
 
+/**
+ * This class adds a few custom validations for the ForgotPasswordForm.
+ * 
+ * @author Popa Alex
+ *
+ */
+
 @Component
 public class UserForgetPasswordFormValidator implements Validator {
 

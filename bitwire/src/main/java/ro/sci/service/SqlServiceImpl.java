@@ -13,6 +13,12 @@ import ro.sci.domain.ForgotPasswordForm;
 import ro.sci.domain.Role;
 import ro.sci.domain.User;
 import ro.sci.domain.UserCreateForm;
+/**
+ * This class is a service and it's used to create ,delete ,update and read users.
+ * 
+ * @author Popa Alex
+ *
+ */
 
 @Service
 public class SqlServiceImpl implements SqlService {
@@ -44,7 +50,12 @@ public class SqlServiceImpl implements SqlService {
 		return (Collection<User>) dao.findAll();
 		
 	}
-		
+	/**
+	 * This method creates users.
+	 * It gets the user credentials from the userCreateForm and it adds them to the dao.
+	 * 
+	 */
+	
 	@Override
 	public User create(UserCreateForm form) {
 		User user = new User();
@@ -70,7 +81,10 @@ public class SqlServiceImpl implements SqlService {
 		return dao.save(user);
 	
 	}
-
+	/**
+	 * This method deletes users.
+	 * 
+	 */
 	@Override
 	public boolean delete(long id) {
 		if(dao.findOne(id) == null){
@@ -92,7 +106,11 @@ public class SqlServiceImpl implements SqlService {
 		}
 		return null;
 	}
-
+	/**
+	 * This method finds a user by the unique code that each user has.This unique code it's stored and it will be sent in case the password is forgot.
+	 * 
+	 */
+	
 	@Override
 	public User getUserBySafety(String safety) throws NullPointerException {
 		User user = dao.findOneBySafety(safety);

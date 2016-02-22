@@ -4,6 +4,13 @@ import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
+/**
+ * This class is used before the change password ,and it is used so that an email with an unique code will be sent if the email enterd is valid and in the db.
+ * 
+ * @author Popa Alex
+ *
+ */
+
 
 public class ForgotPasswordForm {
 	

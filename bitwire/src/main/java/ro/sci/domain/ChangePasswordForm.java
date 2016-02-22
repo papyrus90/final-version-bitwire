@@ -2,6 +2,13 @@ package ro.sci.domain;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
+/**
+ * This class is used to change the password,and it has a few validations for the inputs.
+ * 
+ * @author Popa Alex
+ *
+ */
+
 
 public class ChangePasswordForm {
 	

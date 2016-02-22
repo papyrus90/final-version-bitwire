@@ -6,6 +6,12 @@ import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
 
+/**
+ * This class is used to add users,and it has a few validations for the inputs.
+ * 
+ * @author Popa Alex
+ *
+ */
 
 
 

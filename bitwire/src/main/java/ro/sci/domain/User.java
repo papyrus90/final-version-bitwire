@@ -11,6 +11,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * This class represents a table of users in the database
+ * 
+ * @author Popa Alex
+ *
+ */
 
 
 @Entity

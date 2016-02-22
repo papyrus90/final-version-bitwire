@@ -9,6 +9,14 @@ import ro.sci.domain.ChangePasswordForm;
 import ro.sci.domain.UserCreateForm;
 import ro.sci.service.SqlService;
 
+/**
+ * This class adds a few custom validations for the ChangePasswordForm.
+ * 
+ * @author Popa Alex
+ *
+ */
+
+
 @Component
 public class UserChangePasswordFormValidator implements Validator {
 	

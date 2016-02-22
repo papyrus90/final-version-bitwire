@@ -8,6 +8,13 @@ import org.springframework.validation.Validator;
 import ro.sci.domain.UserCreateForm;
 import ro.sci.service.SqlService;
 
+/**
+ * This class adds a few custom validations for the UserCreateForm.
+ * 
+ * @author Popa Alex
+ *
+ */
+
 @Component
 public class UserCreateFormValidator implements Validator{
 	
